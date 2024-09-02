@@ -8,8 +8,8 @@ import { NextUIProvider } from "@nextui-org/react";
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider {...props}>
-      {" "}
-      <NextUIProvider>{children}</NextUIProvider>
+    
+     {children}
     </NextThemesProvider>
   );
 }
