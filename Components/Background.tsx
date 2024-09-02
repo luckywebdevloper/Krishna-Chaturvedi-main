@@ -1,6 +1,6 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/Components/ui/background-beams-with-collision";
-import Spline from "@splinetool/react-spline";
+
 import Image from "next/image";
 import portfolioImage from "@/public/portfolio_image.png";
 import { SiAmazonmusic } from "react-icons/si";
