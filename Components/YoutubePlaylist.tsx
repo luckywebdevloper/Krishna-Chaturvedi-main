@@ -3,7 +3,7 @@ import React from "react";
 import Project from "@/public/project_1.jpg";
 import Project2 from "@/public/project_2.jpg";
 import Project3 from "@/public/project_3.jpg";
-import Spline from "@splinetool/react-spline";
+
 import Link from "next/link";
 
 const YoutubePlaylist = () => {
