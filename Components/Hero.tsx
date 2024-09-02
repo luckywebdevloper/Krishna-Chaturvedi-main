@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { FaPlay, FaInstagram, FaTwitter, FaFacebook, FaSpotify } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -13,7 +13,7 @@ const MusicianHeroSection = () => {
     // Logic to play/pause music
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Logic to handle newsletter signup
     console.log('Subscribed:', email);

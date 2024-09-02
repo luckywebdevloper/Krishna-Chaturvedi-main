@@ -1,4 +1,4 @@
-import MusicianHeroSection from "@/components/Hero";
+import MusicianHeroSection from "../components/Hero";
 import Image from "next/image";
 
 export default function Home() {
