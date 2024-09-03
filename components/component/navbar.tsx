@@ -27,8 +27,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-background shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
-          <MountainIcon className="h-6 w-6" />
-          <span className="sr-only">Acme Inc</span>
+         
+<h2 className=" font-bold md:text-2xl  text-xl">Krishna Chaturvedi</h2>
+  
         </Link>
         <nav className="hidden gap-6 text-sm font-medium md:flex">
           <Link
