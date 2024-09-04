@@ -30,7 +30,7 @@ export function Contact_form() {
   const [phone, setPhone] = useState("")
   const [location, setLocation] = useState("")
   const [email, setEmail] = useState("")
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
     try {
       const response = await fetch("YOUR_API_URL", {

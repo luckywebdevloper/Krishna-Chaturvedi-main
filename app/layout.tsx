@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from '@/lib/utils'
 import { Navbar } from "@/components/component/navbar";
+import { Footer } from "@/components/component/footer";
 const fontHeading = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -34,7 +35,9 @@ export default function RootLayout({
           fontHeading.variable,
           fontBody.variable
       )}>
-        <Navbar/>{children}</body>
+        <Navbar />{children}
+      
+      <Footer/></body>
     </html>
   );
 }
