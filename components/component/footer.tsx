@@ -18,6 +18,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import { JSX, SVGProps } from "react"
 
 export function Footer() {
   return (
@@ -105,7 +106,7 @@ export function Footer() {
   )
 }
 
-function AirplayIcon(props) {
+function AirplayIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -126,7 +127,7 @@ function AirplayIcon(props) {
 }
 
 
-function AppleIcon(props) {
+function AppleIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -147,7 +148,7 @@ function AppleIcon(props) {
 }
 
 
-function FacebookIcon(props) {
+function FacebookIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -167,7 +168,7 @@ function FacebookIcon(props) {
 }
 
 
-function FileMusicIcon(props) {
+function FileMusicIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -190,7 +191,7 @@ function FileMusicIcon(props) {
 }
 
 
-function InstagramIcon(props) {
+function InstagramIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -212,7 +213,7 @@ function InstagramIcon(props) {
 }
 
 
-function TwitterIcon(props) {
+function TwitterIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -232,7 +233,7 @@ function TwitterIcon(props) {
 }
 
 
-function YoutubeIcon(props) {
+function YoutubeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
