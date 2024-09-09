@@ -52,7 +52,7 @@ export function Footer() {
         </div>
         <div className="grid gap-1">
           <h3 className="font-semibold">Social Media</h3>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://www.instagram.com/krishnachaturvedi_official/" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <InstagramIcon className="h-5 w-5" />
             Instagram
           </Link>
@@ -60,7 +60,7 @@ export function Footer() {
             <TwitterIcon className="h-5 w-5" />
             Twitter
           </Link>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://www.facebook.com/people/Krishna-Chaturvedi/100094148212851/" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <FacebookIcon className="h-5 w-5" />
             Facebook
           </Link>

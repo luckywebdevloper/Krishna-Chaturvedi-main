@@ -66,11 +66,11 @@ export function Youtube_video() {
               className="object-cover w-full aspect-video group-hover:opacity-50 transition-opacity"
             />
             <div className="p-4 bg-background">
-              <h3 className="text-lg font-semibold line-clamp-2">Mere Bholenath Ji </h3>
+              <h3 className="text-lg font-semibold line-clamp-2"> Mera Bholenath  </h3>
               <div className="grid gap-1 text-sm text-muted-foreground">
                 <div>Singer - Krishna Chaturvedi</div>
-                <div>Music - Rajat Randhawa</div>
-                <div>Lyrics -  Naveen Agrawal</div>
+                <div>Composer & Lyrics - Pankaj VRK</div>
+                <div>Arrangement  & Mixing - Ravi Gurru</div>
               </div>
             </div>
           </div>
@@ -86,11 +86,11 @@ export function Youtube_video() {
               className="object-cover w-full aspect-video group-hover:opacity-50 transition-opacity"
             />
             <div className="p-4 bg-background">
-              <h3 className="text-lg font-semibold line-clamp-2">Sun Bholeshankar </h3>
+              <h3 className="text-lg font-semibold line-clamp-2">Bhajman Radhe </h3>
               <div className="grid gap-1 text-sm text-muted-foreground">
                 <div>Singer - Krishna Chaturvedi</div>
-                <div>Composer - Pankaj VRK</div>
-                <div>Music -  Tarun Rishi</div>
+                <div>Lyrics - Pankaj VRK , Gourav Pawar Bhawsar</div>
+                <div>Music Arrangement - Rmaharaj (Rajat Yagnik)</div>
               </div>
             </div>
           </div>
