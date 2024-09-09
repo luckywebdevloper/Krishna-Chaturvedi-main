@@ -26,26 +26,26 @@ export function Footer() {
       <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
         <div className="grid gap-1">
           <h3 className="font-semibold">Music Platforms</h3>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://open.spotify.com/artist/1ZdiGynuU5RZDk1qA2Ukqh" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <AirplayIcon className="h-5 w-5" />
             Spotify
           </Link>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://music.apple.com/in/artist/krishna-chaturvedi/1678006853" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <AppleIcon className="h-5 w-5" />
             Apple Music
           </Link>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://www.youtube.com/@KrishnaChaturvedi.Official" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <YoutubeIcon className="h-5 w-5" />
-            YouTube Music
+            YouTube 
           </Link>
         </div>
         <div className="grid gap-1">
           <h3 className="font-semibold">Indian Music</h3>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://www.jiosaavn.com/artist/krishna-chaturvedi-songs/2d0KsMo-sEU_" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <FileMusicIcon className="h-5 w-5" />
             JioSaavn
           </Link>
-          <Link href="#" className="flex items-center gap-2 hover:underline" prefetch={false}>
+          <Link href="https://gaana.com/artist/krishna-chaturvedi" className="flex items-center gap-2 hover:underline" prefetch={false}>
             <FileMusicIcon className="h-5 w-5" />
             Gaana
           </Link>

@@ -40,7 +40,7 @@ export function Navbar() {
             Home
           </Link>
           <Link
-            href="#"
+            href="/about"
             className={`relative flex items-center gap-2 py-2 transition-colors hover:text-primary`}
             prefetch={false}
           >
