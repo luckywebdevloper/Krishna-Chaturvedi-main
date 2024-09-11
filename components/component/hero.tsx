@@ -25,11 +25,11 @@ export function Hero() {
       <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <div className="space-y-4 animate-fade-in">
           <img
-            src="/placeholder.svg"
+            src="/krishna_2.jpg"
             width={550}
             height={550}
             alt="Krishna Chaturvedi"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+            className="mx-auto aspect-square overflow-hidden rounded-lg shadow-2xl object-cover sm:w-full"
           />
         </div>
         <div className="space-y-4">

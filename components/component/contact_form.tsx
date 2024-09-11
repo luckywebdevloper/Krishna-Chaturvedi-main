@@ -114,7 +114,7 @@ export function Contact_form() {
       </div>
       <div>
         <img
-          src="/placeholder.svg"
+          src="/krishna_1.jpg"
           alt="Contact Image"
           className="w-full h-full object-cover rounded-lg animate-fade-in"
           width="500"
