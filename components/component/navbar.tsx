@@ -33,7 +33,7 @@ export function Navbar() {
         </Link>
         <nav className="hidden gap-6 text-sm font-medium md:flex">
           <Link
-            href="#"
+            href="/"
             className="relative flex items-center gap-2 py-2 transition-colors hover:text-primary"
             prefetch={false}
           >
@@ -47,11 +47,11 @@ export function Navbar() {
             About
           </Link>
           <Link
-            href="#"
+            href="/gallery"
             className="relative flex items-center gap-2 py-2 transition-colors hover:text-primary"
             prefetch={false}
           >
-            Contact
+            Gallery
           </Link>
         </nav>
         <Sheet>
@@ -64,25 +64,25 @@ export function Navbar() {
           <SheetContent side="right" className="md:hidden">
             <div className="grid gap-4 p-6">
               <Link
-                href="#"
+                href="/"
                 className="relative flex items-center gap-2 py-2 transition-colors hover:text-primary"
                 prefetch={false}
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href="/gallery"
                 className={`relative flex items-center gap-2 py-2 transition-colors hover:text-primary $`}
                 prefetch={false}
               >
-                About
+                Gallery
               </Link>
               <Link
                 href="#"
                 className="relative flex items-center gap-2 py-2 transition-colors hover:text-primary"
                 prefetch={false}
               >
-                Contact
+                About
               </Link>
             </div>
           </SheetContent>
