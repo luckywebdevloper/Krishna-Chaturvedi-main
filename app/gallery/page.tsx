@@ -4,21 +4,21 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { X } from 'lucide-react'
-// import image1 from "@/public/krishna_1.jpg"
-// import image2 from "@/public/krishna_1.jpg"
-// import image3 from "@/public/krishna_1.jpg"
-// import image4 from "@/public/krishna_1.jpg"
-// import image5 from "@/public/krishna_1.jpg"
+import image1 from "@/public/krishna_1.jpg"
+import image2 from "@/public/krishna_1.jpg"
+import image3 from "@/public/krishna_1.jpg"
+import image4 from "@/public/krishna_1.jpg"
+import image5 from "@/public/krishna_1.jpg"
 
 // Sample data - replace with actual musician images
-// const images = [
-//   { id: 1, src:image1, alt: 'Musician on stage' },
-//   { id: 2, src: image2, alt: 'Album cover' },
-//   { id: 3, src: image3, alt: 'Studio session' },
-//   { id: 4, src: image4, alt: 'Fan meet and greet'},
-//   { id: 5, src: image5, alt: 'Backstage moment' },
-//   { id: 6, src: image5, alt: 'Music video shoot' },
-// ]
+const images = [
+  { id: 1, src:image1, alt: 'Musician on stage' },
+  { id: 2, src: image2, alt: 'Album cover' },
+  { id: 3, src: image3, alt: 'Studio session' },
+  { id: 4, src: image4, alt: 'Fan meet and greet'},
+  { id: 5, src: image5, alt: 'Backstage moment' },
+  { id: 6, src: image5, alt: 'Music video shoot' },
+]
 
 export default function MusicianGallery() {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -26,7 +26,7 @@ export default function MusicianGallery() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center">Musician Gallery</h1>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image) => (
           <motion.div
             key={image.id}
@@ -44,9 +44,9 @@ export default function MusicianGallery() {
             />
           </motion.div>
         ))}
-      </div> */}
+      </div>
 
-      {/* {selectedImage && (
+      {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative">
             <motion.div
@@ -72,7 +72,7 @@ export default function MusicianGallery() {
             </button>
           </div>
         </div>
-      )} */}
+      )}
     </div>
   )
 }
