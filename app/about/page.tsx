@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckIcon, Facebook, Instagram, Twitter } from "lucide-react";
+import { CheckIcon,  } from "lucide-react";
 import Image from "next/image";
 import krishna from "@/public/krishna_2.jpg";
 import Link from "next/link";
@@ -67,7 +67,7 @@ const page = () => {
               </p>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 Can his inspiring story ignite the spark within you to chase
-                your own dreams? Let’s get to know!
+                your own dreams? Let s get to know!
               </p>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 Krishna Chaturvedi, born and brought up in Rewa, Madhya Pradesh,
@@ -78,13 +78,13 @@ const page = () => {
                 countless fans, proving that with strong faith in oneself and
                 unmatched hard work, even the humble beginnings can lead to
                 extraordinary success.
-              </p>{" "}
+              </p>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
-                Talking about his family, Krishna’s father, holds Post
+                Talking about his family, Krishna s father, holds Post
                 Graduation degree but still devoted his life to farming. His
-                father’s dream for Krishna was to secure a stable government
+                father s dream for Krishna was to secure a stable government
                 job. However, Krishna's heart was captivated by music from an
-                early age, a passion perhaps inspired by his grandfather’s love
+                early age, a passion perhaps inspired by his grandfather s love
                 for melodies and the presence of a harmonium in their home.
               </p>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
@@ -98,7 +98,7 @@ const page = () => {
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 The pandemic brought additional challenges, yet it also provided
                 a period of introspection.
-              </p>{" "}
+              </p>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
                 After the lockdowns, Krishna performed at cafes and small
                 gatherings. His break came during a Navratri event when Pankaj
