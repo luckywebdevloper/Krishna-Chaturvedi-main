@@ -1,32 +1,32 @@
-'use client'
+"use client"
 
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import { X } from 'lucide-react'
-import image1 from "@/public/krishna_1.jpg"
-import image2 from "@/public/krishna_1.jpg"
-import image3 from "@/public/krishna_1.jpg"
-import image4 from "@/public/krishna_1.jpg"
-import image5 from "@/public/krishna_1.jpg"
 
-// Sample data - replace with actual musician images
+// Sample image data (replace with your own images)
 const images = [
-  { id: 1, src:image1, alt: 'Musician on stage' },
-  { id: 2, src: image2, alt: 'Album cover' },
-  { id: 3, src: image3, alt: 'Studio session' },
-  { id: 4, src: image4, alt: 'Fan meet and greet'},
-  { id: 5, src: image5, alt: 'Backstage moment' },
-  { id: 6, src: image5, alt: 'Music video shoot' },
+  { id: 1, src: "/krishna_1.jpg", alt: "Gallery Image 1" },
+  { id: 2, src: "/krishna_2.jpg", alt: "Gallery Image 2" },
+  { id: 3, src: "/krishna_1.jpg", alt: "Gallery Image 3" },
+  { id: 4, src: "/krishna_1.jpg", alt: "Gallery Image 4" },
+  { id: 5, src: "/krishna_1.jpg", alt: "Gallery Image 5" },
+  { id: 6, src: "/krishna_1.jpg", alt: "Gallery Image 6" },
 ]
 
-export default function MusicianGallery() {
+export default function AnimatedGallery() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">Musician Gallery</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <h1 className="text-4xl font-bold mb-8 text-center">Animated Gallery</h1>
+      <motion.div 
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {images.map((image) => (
           <motion.div
             key={image.id}
@@ -40,39 +40,47 @@ export default function MusicianGallery() {
               alt={image.alt}
               width={600}
               height={400}
-              className="object-cover w-full h-64"
+              className="w-full h-auto object-cover"
             />
           </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative">
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          >
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.3 }}
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              className="relative"
             >
               <Image
                 src={selectedImage.src}
                 alt={selectedImage.alt}
                 width={900}
                 height={600}
-                className="max-w-full max-h-[80vh] object-contain"
+                className="max-w-full max-h-[90vh] object-contain"
               />
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setSelectedImage(null)
+                }}
+                className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2"
+              >
+                <X size={24} />
+              </button>
             </motion.div>
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
-              aria-label="Close modal"
-            >
-              <X size={24} />
-            </button>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

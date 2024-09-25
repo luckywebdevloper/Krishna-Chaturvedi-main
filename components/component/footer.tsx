@@ -23,7 +23,7 @@ import { JSX, SVGProps } from "react"
 export function Footer() {
   return (
     <footer className="bg-muted py-12 animate-fade-in">
-      <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
+      <div className="container mx-auto max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
         <div className="grid gap-1">
           <h3 className="font-semibold">Music Platforms</h3>
           <Link href="https://open.spotify.com/artist/1ZdiGynuU5RZDk1qA2Ukqh" className="flex items-center gap-2 hover:underline" prefetch={false}>
@@ -65,18 +65,7 @@ export function Footer() {
             Facebook
           </Link>
         </div>
-        <div className="grid gap-1">
-          <h3 className="font-semibold">Legal</h3>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Privacy Policy
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Terms of Service
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Cookie Policy
-          </Link>
-        </div>
+      
         <div className="grid gap-1">
           <h3 className="font-semibold">Contact</h3>
           <Link href="#" className="hover:underline" prefetch={false}>
