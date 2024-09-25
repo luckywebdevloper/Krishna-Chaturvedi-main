@@ -6,7 +6,13 @@ import Image from 'next/image'
 import { X } from 'lucide-react'
 
 // Sample image data (replace with your own images)
-const images = [
+type ImageType = {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+const images: ImageType[] = [
   { id: 1, src: "/krishna_1.jpg", alt: "Gallery Image 1" },
   { id: 2, src: "/krishna_2.jpg", alt: "Gallery Image 2" },
   { id: 3, src: "/krishna_1.jpg", alt: "Gallery Image 3" },
@@ -16,7 +22,7 @@ const images = [
 ]
 
 export default function AnimatedGallery() {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState<ImageType | null>(null)
 
   return (
     <div className="container mx-auto px-4 py-8">
